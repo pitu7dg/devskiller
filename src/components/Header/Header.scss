@@ -1,0 +1,28 @@
+@import '../../styles/colors';
+
+.headerContainer {
+  align-items: center;
+  background: #24292e;
+  color: #fff;
+  display: flex;
+  height: 80px;
+  width: 100%;
+  
+  h1 {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.favoritesContainer {
+  color: $favorites-color;
+  cursor: pointer;
+  font-size: 30pt;
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+.favoritesNumber {
+  color: #fff;
+  font-size: 10pt;
+}

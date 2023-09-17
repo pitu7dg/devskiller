@@ -1,0 +1,15 @@
+.appContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+.offersContainer {
+  height: 130%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}

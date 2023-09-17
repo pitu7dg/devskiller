@@ -1,0 +1,135 @@
+@import '../../styles/colors';
+
+.offerContainer {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 1px rgb(100 116 139 / 6%), 0 1px 2px rgb(100 116 139 / 10%);
+  display: flex;
+  flex-direction: column;
+  height: 180px;
+  margin-right: 20px;
+  margin-top: 25px;
+  padding-bottom: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 5px;
+  width: 900px;
+}
+
+.offerHeader {
+  align-items: center;
+  display: flex;
+  height: 50px;
+
+  h3 {
+    color: #818181;
+  }
+    
+  span {
+    color: #4f5f6e;
+    font-size: 20pt;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
+.offerDescription {
+  color: #999;
+  display: block;
+  line-clamp: 3;
+  max-width: 75%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.offerFooter {
+  align-items: center;
+  color: #808080;
+  display: flex;
+  font-size: 10pt;
+  height: 50px;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+.offerLink {
+  border-right: 1px solid #d3d3d3;
+  color: rgba(18, 35, 41, 0.877);
+  cursor: pointer;
+  margin-right: 20px;
+  padding-right: 20px;
+  transition: color linear 0.2s;
+     
+  &:hover {
+    color: #41b3da;
+  }
+}
+
+.offerFavorite {
+  color: rgba(41, 40, 18, 0.877);
+  cursor: pointer;
+  transition: color linear 0.2s;
+
+  &:hover {
+    color: $favorites-color;
+  }
+}
+  
+.offerCategory {
+  background: #48b948;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 10pt;
+  font-weight: bold;
+  margin-left: auto;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  width: fit-content;
+}
+
+.defaultOffer {
+  border-left: 25px solid $category-default-color;
+
+  .offerCategory {
+    background: $category-default-color;
+  }
+}
+
+.backendOffer {
+  border-left: 25px solid $category-backend-color;
+
+  .offerCategory {
+    background: $category-backend-color;
+  }
+}
+
+.frontendOffer {
+  border-left: 25px solid $category-frontend-color;
+
+  .offerCategory {
+    background: $category-frontend-color;
+  }
+}
+
+.testingOffer {
+  border-left: 25px solid $category-test-color;
+
+  .offerCategory {
+    background: $category-test-color;
+  }
+}
+
+.fullStackOffer {
+  border-left: 25px solid $category-fullstack-color;
+
+  .offerCategory {
+    background: $category-fullstack-color;
+  }
+}
+
+.favoriteOffer {
+  color: $favorites-color;
+}
