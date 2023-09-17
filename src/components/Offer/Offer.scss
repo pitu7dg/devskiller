@@ -70,6 +70,8 @@
   color: rgba(41, 40, 18, 0.877);
   cursor: pointer;
   transition: color linear 0.2s;
+  background: unset;
+  border: unset;
 
   &:hover {
     color: $favorites-color;

@@ -3,7 +3,7 @@ import axios, { AxiosResponse } from 'axios';
 
 mock();
 
-interface Offer {
+export interface Offer {
   id: string;
   title: string;
   description: string;
@@ -12,24 +12,19 @@ interface Offer {
   url: string;
 }
 
-interface Currency {
+export interface Currency {
   [type: string]: number;
 }
 
-const getActualCurrency = (): Promise<
+export const getActualCurrency = (): Promise<
   AxiosResponse<{
     totalPages: number;
-    data: Currency[];
+    data: Currency;
   }>
 > => axios.get(`/currency`);
 
-const getOffers = (): Promise<
+export const getOffers = (): Promise<
   AxiosResponse<{
     data: Offer[];
   }>
 > => axios.post('/offers');
-
-export default {
-  getActualCurrency,
-  getOffers,
-};
